@@ -17,8 +17,8 @@ def agregar_proceso(procesos):
     nombre = input("Nombre del proceso: ")
     rafaga = int(input("Ráfaga: "))
     t_llegada = int(input("Tiempo de llegada: "))
-
-    proceso = [nombre, rafaga, t_llegada]
+    t_prioridad = int(input("prioridad: "))
+    proceso = [nombre, rafaga, t_llegada,t_prioridad]
 
     if len(procesos) == 0:
         return np.array([proceso])
